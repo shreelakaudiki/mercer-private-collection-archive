@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>1957 Catalogue — Mercer Private Collection Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           1957 CATALOGUE
+           ========================================= */
+
+        .catalogue-header {
+            max-width: 900px;
+            margin-bottom: 55px;
+        }
+
+        .catalogue-header h2 {
+            margin: 0;
+
+            color: #e2dbce;
+
+            font-size: 42px;
+            font-weight: normal;
+
+            line-height: 1.15;
+        }
+
+        .catalogue-header .subtitle {
+            margin: 14px 0 0;
+
+            color: #817b72;
+
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+
+        /* CATALOGUE IDENTIFICATION */
+
+        .catalogue-meta {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            margin-top: 30px;
+
+            border-top: 1px solid #514d46;
+            border-bottom: 1px solid #514d46;
+        }
+
+        .catalogue-meta div {
+            padding: 18px 20px;
+
+            border-right: 1px solid #353533;
+        }
+
+        .catalogue-meta div:last-child {
+            border-right: none;
+        }
+
+        .catalogue-meta span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #8e3035;
+
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+
+        .catalogue-meta strong {
+            color: #c6beb1;
+
+            font-size: 11px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+
+
+        /* ARCHIVAL NOTICE */
+
+        .catalogue-notice {
+            margin: 45px 0;
+
+            padding: 20px 25px;
+
+            background: #181a1b;
+
+            border-left: 2px solid #8e3035;
+
+            color: #858078;
+
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+
+        /* LOT LIST */
+
+        .lot-list {
+            border-top: 1px solid #625d54;
+        }
+
+        .lot {
+            display: grid;
+
+            grid-template-columns: 90px 1fr 150px;
+
+            align-items: center;
+
+            min-height: 105px;
+
+            padding: 20px 10px;
+
+            border-bottom: 1px solid #302f2c;
+
+            transition: background 0.25s ease;
+        }
+
+        .lot:hover {
+            background: #181a1b;
+        }
+
+
+        .lot-number {
+            color: #9d968a;
+
+            font-size: 21px;
+            letter-spacing: 1px;
+        }
+
+
+        .lot-info .category {
+            margin: 0 0 7px;
+
+            color: #8e3035;
+
+            font-size: 8px;
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .lot-info h3 {
+            margin: 0;
+
+            color: #d8d1c5;
+
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+
+        .lot-info p {
+            margin: 7px 0 0;
+
+            color: #6f6a62;
+
+            font-size: 10px;
+        }
+
+
+        .lot > a {
+            color: #928c82;
+
+            font-size: 8px;
+            letter-spacing: 1.7px;
+
+            text-align: right;
+
+            text-decoration: none;
+        }
+
+
+        .lot > a:hover {
+            color: #bd464b;
+        }
+
+
+        /* ITEM 112 */
+
+        .lot.special {
+            border-left: 2px solid #8e3035;
+
+            padding-left: 18px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(142, 48, 53, 0.06),
+                    transparent
+                );
+        }
+
+
+        /* CATALOGUE FOOTNOTE */
+
+        .catalogue-footnote {
+            max-width: 700px;
+
+            margin-top: 60px;
+
+            padding-top: 25px;
+
+            border-top: 1px solid #353533;
+
+            color: #68645d;
+
+            font-size: 10px;
+            line-height: 1.8;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .catalogue-header h2 {
+                font-size: 34px;
+            }
+
+            .catalogue-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .catalogue-meta div {
+                border-right: none;
+                border-bottom: 1px solid #353533;
+            }
+
+            .catalogue-meta div:last-child {
+                border-bottom: none;
+            }
+
+            .lot {
+                grid-template-columns: 65px 1fr;
+                gap: 12px;
+            }
+
+            .lot > a {
+                grid-column: 2;
+
+                text-align: left;
+
+                margin-top: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="top-line">
+        <span>LONDON · EST. 1931</span>
+        <span>PRIVATE COLLECTIONS · HISTORICAL RECORDS</span>
+    </div>
+
+
+    <div class="british-line">
+        <span class="blue"></span>
+        <span class="white"></span>
+        <span class="red"></span>
+    </div>
+
+
+    <div class="header-content">
+
+        <div class="archive-mark">
+            MPC
+        </div>
+
+        <div class="title-block">
+
+            <h1>
+                Mercer Private<br>
+                Collection Archive
+            </h1>
+
+            <p>
+                LONDON · PRIVATE HOLDINGS
+            </p>
+
+        </div>
+
+        <div class="header-note">
+            Records of<br>
+            Private Ownership
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            ARCHIVE
+        </a>
+
+        <a href="catalogue-1957.html" class="active">
+            COLLECTIONS
+        </a>
+
+        <a href="#">
+            HISTORY
+        </a>
+
+        <a href="#">
+            CORRESPONDENCE
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <div class="catalogue-header">
+
+        <p class="eyebrow">
+            PRIVATE COLLECTION · 1957
+        </p>
+
+        <h2>
+            London · October Collection
+        </h2>
+
+        <p class="subtitle">
+            Selected objects recorded within the Mercer private
+            holdings during the 1957 London collection period.
+        </p>
+
+
+        <div class="catalogue-meta">
+
+            <div>
+
+                <span>CATALOGUE</span>
+
+                <strong>
+                    MPC–1957–10
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>LOCATION</span>
+
+                <strong>
+                    LONDON
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>REGISTER</span>
+
+                <strong>
+                    PRIVATE HOLDINGS
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="catalogue-notice">
+
+        This catalogue records selected objects examined during
+        the October 1957 collection period. Several objects were
+        entered from private sources for reference purposes.
+        Provenance information varies between individual records.
+
+    </div>
+
+
+
+    <section>
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    CATALOGUE ENTRIES
+                </p>
+
+                <h2>
+                    Selected Objects
+                </h2>
+
+            </div>
+
+            <span>
+                ITEMS 106–117
+            </span>
+
+        </div>
+
+
+
+        <div class="lot-list">
+
+
+            <!-- ITEM 106 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    106
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        PERSONAL OBJECTS
+                    </p>
+
+                    <h3>
+                        Silver Cigarette Case
+                    </h3>
+
+                    <p>
+                        Engraved silver case with hinged lid.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 108 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    108
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        CLOCKS & INSTRUMENTS
+                    </p>
+
+                    <h3>
+                        Victorian Desk Clock
+                    </h3>
+
+                    <p>
+                        Brass mantel clock with enamel dial.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 109 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    109
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        JEWELLERY
+                    </p>
+
+                    <h3>
+                        Sapphire Brooch
+                    </h3>
+
+                    <p>
+                        Small sapphire-mounted gold brooch.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 110 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    110
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        TRAVEL OBJECTS
+                    </p>
+
+                    <h3>
+                        Leather Travelling Case
+                    </h3>
+
+                    <p>
+                        Fitted leather case of European manufacture.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 112 — IMPORTANT -->
+
+            <div class="lot special">
+
+                <div class="lot-number">
+                    112
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        JEWELLERY · UNCATALOGUED
+                    </p>
+
+                    <h3>
+                        Uncatalogued Jewel
+                    </h3>
+
+                    <p>
+                        Crystal and five-diamond setting · provenance unknown.
+                    </p>
+
+                </div>
+
+                <a href="record-1957.html?item=112">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 114 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    114
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        PERSONAL OBJECTS
+                    </p>
+
+                    <h3>
+                        Gold Signet Ring
+                    </h3>
+
+                    <p>
+                        Plain gold ring bearing an unidentified crest.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+
+            <!-- ITEM 117 -->
+
+            <div class="lot">
+
+                <div class="lot-number">
+                    117
+                </div>
+
+                <div class="lot-info">
+
+                    <p class="category">
+                        ART & MINIATURES
+                    </p>
+
+                    <h3>
+                        Miniature Portrait
+                    </h3>
+
+                    <p>
+                        Portrait miniature in an oval gilt frame.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORD →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <p class="catalogue-footnote">
+
+        Catalogue reference: MPC–1957–10.
+        Selected records reproduced from the Mercer private
+        collection register. Several entries remain unavailable
+        for public consultation.
+
+    </p>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-main">
+
+        <div>
+            MERCER PRIVATE COLLECTION ARCHIVE
+        </div>
+
+        <span>
+            LONDON · ESTABLISHED 1931
+        </span>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            ARCHIVES · COLLECTIONS · CORRESPONDENCE
+        </span>
+
+        <span>
+            LONDON, UNITED KINGDOM
+        </span>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
