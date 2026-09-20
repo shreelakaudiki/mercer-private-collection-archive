@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mercer Private Collection Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-line">
+        <span>LONDON · EST. 1931</span>
+        <span>PRIVATE COLLECTIONS · HISTORICAL RECORDS</span>
+    </div>
+
+    <div class="british-line">
+        <span class="blue"></span>
+        <span class="white"></span>
+        <span class="red"></span>
+    </div>
+
+
+    <div class="header-content">
+
+        <div class="archive-mark">
+            MPC
+        </div>
+
+        <div class="title-block">
+
+            <h1>
+                Mercer Private<br>
+                Collection Archive
+            </h1>
+
+            <p>
+                LONDON · PRIVATE HOLDINGS
+            </p>
+
+        </div>
+
+        <div class="header-note">
+            Records of<br>
+            Private Ownership
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html" class="active">
+            ARCHIVE
+        </a>
+
+        <a href="#">
+            COLLECTIONS
+        </a>
+
+        <a href="#">
+            HISTORY
+        </a>
+
+        <a href="#">
+            CORRESPONDENCE
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <!-- ARCHIVE SEARCH -->
+
+    <section class="search-panel">
+
+        <div class="search-intro">
+
+            <p class="eyebrow">
+                ARCHIVE SEARCH
+            </p>
+
+            <h2>
+                Search the Collection Records
+            </h2>
+
+            <p class="search-description">
+                Consult the indexed records of selected private
+                holdings and collection transfers.
+            </p>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="yearInput"
+                placeholder="Enter year"
+            >
+
+            <button onclick="searchArchive()">
+                SEARCH
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <p id="searchMessage" class="search-message"></p>
+
+
+
+    <!-- COLLECTION RECORDS -->
+
+    <section class="records">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">
+                    PRIVATE HOLDINGS
+                </p>
+
+                <h2>
+                    Collection Records
+                </h2>
+            </div>
+
+            <span>
+                SELECT A YEAR TO VIEW RECORDS
+            </span>
+
+        </div>
+
+
+        <div class="record-list">
+
+
+            <!-- 1951 -->
+
+            <div class="record-entry">
+
+                <div class="record-year">
+                    1951
+                </div>
+
+                <div class="record-info">
+
+                    <p>
+                        PRIVATE OBJECTS
+                    </p>
+
+                    <h3>
+                        European Decorative Collection
+                    </h3>
+
+                    <span>
+                        Selected objects · London
+                    </span>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORDS →
+                </a>
+
+            </div>
+
+
+
+            <!-- 1954 -->
+
+            <div class="record-entry">
+
+                <div class="record-year">
+                    1954
+                </div>
+
+                <div class="record-info">
+
+                    <p>
+                        JEWELLERY & OBJECTS
+                    </p>
+
+                    <h3>
+                        Selected Private Holdings
+                    </h3>
+
+                    <span>
+                        Registered collection material
+                    </span>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORDS →
+                </a>
+
+            </div>
+
+
+
+            <!-- 1957 -->
+
+            <div class="record-entry featured">
+
+                <div class="record-year">
+                    1957
+                </div>
+
+                <div class="record-info">
+
+                    <p>
+                        PRIVATE COLLECTION
+                    </p>
+
+                    <h3>
+                        London · October Collection
+                    </h3>
+
+                    <span>
+                        Selected holdings · Private register
+                    </span>
+
+                </div>
+
+                <a href="catalogue-1957.html">
+                    VIEW RECORDS →
+                </a>
+
+            </div>
+
+
+
+            <!-- 1961 -->
+
+            <div class="record-entry">
+
+                <div class="record-year">
+                    1961
+                </div>
+
+                <div class="record-info">
+
+                    <p>
+                        HISTORICAL OBJECTS
+                    </p>
+
+                    <h3>
+                        Miscellaneous Holdings
+                    </h3>
+
+                    <span>
+                        Objects and correspondence
+                    </span>
+
+                </div>
+
+                <a href="#">
+                    VIEW RECORDS →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ARCHIVE NOTE -->
+
+    <section class="archive-note">
+
+        <div class="note-mark">
+            MPC
+        </div>
+
+        <div>
+
+            <p class="eyebrow">
+                ARCHIVAL STATEMENT
+            </p>
+
+            <h2>
+                Records of private ownership,
+                preserved by collection.
+            </h2>
+
+            <p>
+                The Mercer archive contains selected records,
+                catalogues and correspondence relating to
+                privately held objects documented in London
+                and abroad.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-main">
+
+        <div>
+            MERCER PRIVATE COLLECTION ARCHIVE
+        </div>
+
+        <span>
+            LONDON · ESTABLISHED 1931
+        </span>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            ARCHIVES · COLLECTIONS · CORRESPONDENCE
+        </span>
+
+        <span>
+            LONDON, UNITED KINGDOM
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+const archive = {
+
+    "1951": "#",
+
+    "1954": "#",
+
+    "1957": "catalogue-1957.html",
+
+    "1961": "#"
+
+};
+
+
+function searchArchive() {
+
+    const year =
+        document.getElementById("yearInput")
+        .value
+        .trim();
+
+    const message =
+        document.getElementById("searchMessage");
+
+
+    if (archive[year]) {
+
+        if (archive[year] === "#") {
+
+            message.textContent =
+                "No digitised catalogue is currently available for this year.";
+
+        } else {
+
+            window.location.href =
+                archive[year];
+
+        }
+
+        return;
+    }
+
+
+    message.textContent =
+        "No catalogue record was found for this year.";
+
+}
+
+
+document
+    .getElementById("yearInput")
+    .addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter") {
+
+            searchArchive();
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+</html>
