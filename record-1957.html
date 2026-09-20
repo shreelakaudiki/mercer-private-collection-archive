@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Item 112 — Mercer Private Collection Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           1957 RECORD PAGE
+           ========================================= */
+
+        .record-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+
+        .record-back {
+            margin-bottom: 35px;
+        }
+
+        .record-back a {
+            color: #817b72;
+
+            font-size: 9px;
+            letter-spacing: 1.8px;
+
+            text-decoration: none;
+        }
+
+        .record-back a:hover {
+            color: #bd464b;
+        }
+
+
+        /* RECORD CARD */
+
+        .record-card {
+            background: #181a1b;
+
+            border: 1px solid #4b4740;
+
+            box-shadow:
+                0 18px 45px rgba(0, 0, 0, 0.28);
+        }
+
+
+        /* TOP */
+
+        .record-top {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-start;
+
+            gap: 40px;
+
+            padding: 45px 50px 38px;
+
+            border-bottom: 1px solid #46423c;
+        }
+
+
+        .record-heading {
+            flex: 1;
+        }
+
+
+        .record-heading .eyebrow {
+            margin-bottom: 12px;
+        }
+
+
+        .record-heading h2 {
+            margin: 0;
+
+            color: #e2dbce;
+
+            font-size: 40px;
+            font-weight: normal;
+
+            line-height: 1.15;
+        }
+
+
+        .record-subtitle {
+            margin: 12px 0 0;
+
+            color: #878177;
+
+            font-size: 15px;
+
+            font-style: italic;
+        }
+
+
+        /* ITEM NUMBER */
+
+        .record-number {
+            min-width: 110px;
+
+            padding-left: 28px;
+
+            border-left: 1px solid #4a4640;
+        }
+
+
+        .record-number span {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #9d373d;
+
+            font-size: 8px;
+            letter-spacing: 2.5px;
+        }
+
+
+        .record-number strong {
+            color: #d5cec1;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 46px;
+            font-weight: normal;
+        }
+
+
+        /* META */
+
+        .record-meta {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            margin: 30px 50px 0;
+
+            border: 1px solid #46423c;
+        }
+
+
+        .record-meta div {
+            padding: 16px 19px;
+
+            border-right: 1px solid #353331;
+        }
+
+
+        .record-meta div:last-child {
+            border-right: none;
+        }
+
+
+        .record-meta span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #8e3035;
+
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+
+
+        .record-meta strong {
+            color: #bdb5a8;
+
+            font-size: 10px;
+            font-weight: normal;
+
+            letter-spacing: 0.7px;
+        }
+
+
+        /* CONTENT */
+
+        .record-content {
+            padding: 42px 50px 50px;
+        }
+
+
+        .record-section {
+            margin-bottom: 35px;
+        }
+
+
+        .record-section .label {
+            margin: 0 0 10px;
+
+            color: #9d373d;
+
+            font-size: 8px;
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        .record-section p:not(.label) {
+            max-width: 720px;
+
+            margin: 0;
+
+            color: #b1aaa0;
+
+            font-size: 14px;
+
+            line-height: 1.9;
+        }
+
+
+        /* STATUS */
+
+        .record-status {
+            display: inline-flex;
+
+            flex-direction: column;
+
+            gap: 7px;
+
+            margin: 5px 0 38px;
+
+            padding: 15px 21px;
+
+            background: #121415;
+
+            border: 1px solid #514c44;
+        }
+
+
+        .record-status span {
+            color: #777169;
+
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+
+
+        .record-status strong {
+            color: #b43e44;
+
+            font-size: 12px;
+            font-weight: normal;
+
+            letter-spacing: 1.8px;
+        }
+
+
+        /* ARCHIVAL NOTE */
+
+        .archival-note {
+            margin-top: 10px;
+
+            padding: 25px 27px;
+
+            background: #141617;
+
+            border-left: 2px solid #8e3035;
+
+            border-top: 1px solid #343330;
+            border-bottom: 1px solid #343330;
+        }
+
+
+        .archival-note .label {
+            margin: 0 0 11px;
+
+            color: #9d373d;
+
+            font-size: 8px;
+            letter-spacing: 2.5px;
+        }
+
+
+        .archival-note p {
+            max-width: 700px;
+
+            margin: 0;
+
+            color: #aaa39a;
+
+            font-size: 13px;
+
+            line-height: 1.85;
+        }
+
+
+        /* SUBTLE CARD */
+
+        .collector-mark {
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid #302f2d;
+
+            color: #59554f;
+
+            font-size: 8px;
+            letter-spacing: 1.8px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* FOOTER */
+
+        .record-footer {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 18px 50px;
+
+            background: #111314;
+
+            border-top: 1px solid #383531;
+
+            color: #656057;
+
+            font-size: 8px;
+            letter-spacing: 1.5px;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .record-top {
+                flex-direction: column;
+
+                padding: 35px 25px;
+            }
+
+
+            .record-heading h2 {
+                font-size: 32px;
+            }
+
+
+            .record-number {
+                padding-left: 0;
+
+                border-left: none;
+            }
+
+
+            .record-meta {
+                grid-template-columns: 1fr;
+
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+
+            .record-meta div {
+                border-right: none;
+
+                border-bottom: 1px solid #353331;
+            }
+
+
+            .record-meta div:last-child {
+                border-bottom: none;
+            }
+
+
+            .record-content {
+                padding: 35px 25px;
+            }
+
+
+            .record-footer {
+                flex-direction: column;
+
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="top-line">
+        <span>LONDON · EST. 1931</span>
+        <span>PRIVATE COLLECTIONS · HISTORICAL RECORDS</span>
+    </div>
+
+
+    <div class="british-line">
+        <span class="blue"></span>
+        <span class="white"></span>
+        <span class="red"></span>
+    </div>
+
+
+    <div class="header-content">
+
+        <div class="archive-mark">
+            MPC
+        </div>
+
+        <div class="title-block">
+
+            <h1>
+                Mercer Private<br>
+                Collection Archive
+            </h1>
+
+            <p>
+                LONDON · PRIVATE HOLDINGS
+            </p>
+
+        </div>
+
+        <div class="header-note">
+            Records of<br>
+            Private Ownership
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            ARCHIVE
+        </a>
+
+        <a href="catalogue-1957.html" class="active">
+            COLLECTIONS
+        </a>
+
+        <a href="#">
+            HISTORY
+        </a>
+
+        <a href="#">
+            CORRESPONDENCE
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <div class="record-wrapper">
+
+
+        <div class="record-back">
+
+            <a href="catalogue-1957.html">
+                ← BACK TO 1957 CATALOGUE
+            </a>
+
+        </div>
+
+
+
+        <article class="record-card">
+
+
+            <!-- HEADER -->
+
+            <div class="record-top">
+
+                <div class="record-heading">
+
+                    <p class="eyebrow">
+                        JEWELLERY · PRIVATE REGISTER
+                    </p>
+
+                    <h2>
+                        Uncatalogued Jewel
+                    </h2>
+
+                    <p class="record-subtitle">
+                        Crystal surrounded by five diamonds
+                    </p>
+
+                </div>
+
+
+                <div class="record-number">
+
+                    <span>
+                        ITEM
+                    </span>
+
+                    <strong>
+                        112
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- META -->
+
+            <div class="record-meta">
+
+                <div>
+
+                    <span>YEAR</span>
+
+                    <strong>
+                        1957
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>LOCATION</span>
+
+                    <strong>
+                        LONDON
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>REGISTER</span>
+
+                    <strong>
+                        PRIVATE HOLDINGS
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONTENT -->
+
+            <div class="record-content">
+
+
+                <section class="record-section">
+
+                    <p class="label">
+                        DESCRIPTION
+                    </p>
+
+                    <p>
+                        An unusually formed jewel consisting of a
+                        central crystal surrounded by five diamonds.
+                        The object was presented without a confirmed
+                        maker or previous catalogue title.
+                    </p>
+
+                </section>
+
+
+
+                <section class="record-section">
+
+                    <p class="label">
+                        PROVENANCE
+                    </p>
+
+                    <p>
+                        Provenance unknown.
+                    </p>
+
+                </section>
+
+
+
+                <section class="record-section">
+
+                    <p class="label">
+                        CATALOGUE NOTE
+                    </p>
+
+                    <p>
+                        Object entered into the private register
+                        following examination.
+                    </p>
+
+                </section>
+
+
+
+                <div class="record-status">
+
+                    <span>
+                        STATUS
+                    </span>
+
+                    <strong>
+                        RETURNED TO OWNER — 1958
+                    </strong>
+
+                </div>
+
+
+
+                <!-- IMPORTANT HIDDEN CLUE -->
+
+                <section class="archival-note">
+
+                    <p class="label">
+                        ARCHIVAL NOTE
+                    </p>
+
+                    <p>
+                        The object was returned to its owner following
+                        private correspondence. The identity of the
+                        recipient was not entered into the public register.
+                        Collectors carefully noted the unusual return of
+                        the jewel in London.
+                    </p>
+
+                </section>
+
+
+
+                <div class="collector-mark">
+
+                    Mercer Private Collection ·
+                    Item 112 · London · 1957
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FOOTER -->
+
+            <div class="record-footer">
+
+                <span>
+                    MPC / 1957 / 112
+                </span>
+
+                <span>
+                    MERCER PRIVATE COLLECTION ARCHIVE
+                </span>
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-main">
+
+        <div>
+            MERCER PRIVATE COLLECTION ARCHIVE
+        </div>
+
+        <span>
+            LONDON · ESTABLISHED 1931
+        </span>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            ARCHIVES · COLLECTIONS · CORRESPONDENCE
+        </span>
+
+        <span>
+            LONDON, UNITED KINGDOM
+        </span>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
