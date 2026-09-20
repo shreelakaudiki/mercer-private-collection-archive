@@ -1,0 +1,757 @@
+/* =========================================
+   MERCER PRIVATE COLLECTION ARCHIVE
+   LONDON · EST. 1931
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #111314;
+    color: #ddd8cc;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background:
+        linear-gradient(
+            180deg,
+            #0c0e0f 0%,
+            #151718 100%
+        );
+
+    border-bottom: 1px solid #514b42;
+}
+
+
+/* TOP LINE */
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 7% 12px;
+
+    color: #918a7d;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+
+/* BRITISH-INSPIRED ACCENT */
+
+.british-line {
+    display: flex;
+    height: 4px;
+    opacity: 0.9;
+}
+
+.british-line .blue {
+    flex: 1;
+    background: #263b52;
+}
+
+.british-line .white {
+    flex: 1;
+    background: #b9b3a7;
+}
+
+.british-line .red {
+    flex: 1;
+    background: #8e3035;
+}
+
+
+/* HEADER CONTENT */
+
+.header-content {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 55px 7% 42px;
+}
+
+
+.archive-mark {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid #83796b;
+
+    color: #e2dccf;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+
+.title-block {
+    flex: 1;
+}
+
+
+.title-block h1 {
+    margin: 0;
+
+    color: #e6dfd1;
+
+    font-size: 39px;
+    font-weight: normal;
+    line-height: 1.08;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.title-block p {
+    margin: 13px 0 0;
+
+    color: #8d877b;
+
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+
+.header-note {
+    padding-left: 30px;
+
+    border-left: 1px solid #403d38;
+
+    color: #8d877b;
+
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.7;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    gap: 32px;
+
+    padding: 0 7% 23px;
+}
+
+
+nav a {
+    position: relative;
+
+    color: #9c968b;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    text-decoration: none;
+}
+
+
+nav a:hover,
+nav a.active {
+    color: #e5ded0;
+}
+
+
+nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -12px;
+
+    height: 1px;
+
+    background: #9b3439;
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+main {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 70px 35px 100px;
+}
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.search-panel {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    padding: 38px 42px;
+
+    background: #181a1b;
+
+    border: 1px solid #45423d;
+
+    border-top: 2px solid #8e3035;
+}
+
+
+.eyebrow {
+    margin: 0 0 12px;
+
+    color: #9d373d;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.search-panel h2 {
+    margin: 0;
+
+    color: #e2dbce;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+.search-description {
+    max-width: 500px;
+
+    margin: 15px 0 0;
+
+    color: #858078;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    align-self: center;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background: #101213;
+
+    border: 1px solid #5a554c;
+
+    color: #e4ded2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+
+.search-box input::placeholder {
+    color: #69645c;
+}
+
+
+.search-box input:focus {
+    border-color: #9d373d;
+}
+
+
+.search-box button {
+    padding: 15px 24px;
+
+    background: #8e3035;
+
+    border: 1px solid #a84448;
+
+    color: #f0e9dc;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background: #a13a3f;
+}
+
+
+.search-message {
+    margin: 15px 0 0;
+
+    color: #a84448;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   RECORDS
+   ========================================= */
+
+.records {
+    margin-top: 90px;
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #625d54;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #e1d9cb;
+
+    font-size: 31px;
+    font-weight: normal;
+}
+
+
+.section-heading > span {
+    color: #716c63;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+}
+
+
+/* RECORD LIST */
+
+.record-list {
+    border-bottom: 1px solid #625d54;
+}
+
+
+.record-entry {
+    display: grid;
+
+    grid-template-columns: 120px 1fr 150px;
+
+    align-items: center;
+
+    min-height: 135px;
+
+    padding: 22px 12px;
+
+    border-bottom: 1px solid #302f2c;
+
+    transition: background 0.25s ease;
+}
+
+
+.record-entry:last-child {
+    border-bottom: none;
+}
+
+
+.record-entry:hover {
+    background: #181a1b;
+}
+
+
+/* FEATURED YEAR */
+
+.record-entry.featured {
+    border-left: 2px solid #8e3035;
+
+    padding-left: 22px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(142, 48, 53, 0.08),
+            transparent
+        );
+}
+
+
+.record-year {
+    color: #aaa396;
+
+    font-size: 29px;
+
+    letter-spacing: 1px;
+}
+
+
+.record-info {
+    padding-right: 30px;
+}
+
+
+.record-info p {
+    margin: 0 0 8px;
+
+    color: #9d373d;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+}
+
+
+.record-info h3 {
+    margin: 0;
+
+    color: #d9d2c6;
+
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.record-info span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #716d66;
+
+    font-size: 10px;
+}
+
+
+.record-entry > a {
+    color: #9c968b;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+
+    text-align: right;
+
+    text-decoration: none;
+}
+
+
+.record-entry > a:hover {
+    color: #c14a4e;
+}
+
+
+/* =========================================
+   ARCHIVE NOTE
+   ========================================= */
+
+.archive-note {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 30px;
+
+    max-width: 780px;
+
+    margin-top: 90px;
+
+    padding: 32px;
+
+    background: #181a1b;
+
+    border: 1px solid #3e3c38;
+
+    border-left: 3px solid #8e3035;
+}
+
+
+.note-mark {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #6a6359;
+
+    color: #b9b0a1;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+.archive-note h2 {
+    max-width: 580px;
+
+    margin: 0;
+
+    color: #ddd5c7;
+
+    font-size: 23px;
+    font-weight: normal;
+
+    line-height: 1.4;
+}
+
+
+.archive-note p:not(.eyebrow) {
+    max-width: 620px;
+
+    margin: 15px 0 0;
+
+    color: #77726a;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #0b0d0e;
+
+    border-top: 1px solid #514b42;
+
+    padding: 35px 7% 28px;
+}
+
+
+.footer-main {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.footer-main div {
+    color: #bdb5a7;
+
+    font-size: 10px;
+    letter-spacing: 2.5px;
+}
+
+
+.footer-main span {
+    color: #716c63;
+
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+    padding-top: 18px;
+
+    border-top: 1px solid #292a28;
+
+    color: #57534c;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 760px) {
+
+    .top-line {
+        flex-direction: column;
+
+        gap: 7px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .header-content {
+        padding: 40px 20px 30px;
+
+        align-items: flex-start;
+    }
+
+
+    .archive-mark {
+        width: 55px;
+        height: 55px;
+
+        font-size: 10px;
+    }
+
+
+    .title-block h1 {
+        font-size: 25px;
+    }
+
+
+    .title-block p {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+
+    .header-note {
+        display: none;
+    }
+
+
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    main {
+        padding: 45px 20px 70px;
+    }
+
+
+    .search-panel {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 28px 25px;
+    }
+
+
+    .search-panel h2 {
+        font-size: 24px;
+    }
+
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+
+    .record-entry {
+        grid-template-columns: 75px 1fr;
+
+        gap: 15px;
+
+        padding: 25px 5px;
+    }
+
+
+    .record-year {
+        font-size: 23px;
+    }
+
+
+    .record-info h3 {
+        font-size: 17px;
+    }
+
+
+    .record-entry > a {
+        grid-column: 2;
+
+        text-align: left;
+
+        margin-top: 5px;
+    }
+
+
+    .archive-note {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+
+    .footer-main,
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
